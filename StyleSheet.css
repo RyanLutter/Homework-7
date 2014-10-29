@@ -1,0 +1,59 @@
+﻿body {
+    background-color: gray;
+    width:750px;
+	margin:0px auto;
+	text-align:center;
+	padding:15px;
+    align-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header {
+    font-size: xx-large;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Bell MT";
+    text-align: center;
+}
+
+.menu {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    margin:0px auto;
+}
+
+
+.gridview {
+}
+
+.gridview td {
+}
+
+.gridview th  {
+}
+
+.gridview .alt {
+    }
+
+
+.detailview {
+}
+
+.detailview td {
+}
+
+.detailview th  {
+}
+
+.footer {
+    font-weight: bold;
+}
+
+.validation{
+    color: red;
+    font-weight: bold;
+    text-align:right;
+}
