@@ -1,14 +1,8 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="contactus.aspx.vb" Inherits="contactus" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/players.master" AutoEventWireup="false" CodeFile="contactus.aspx.vb" Inherits="contactus" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 <!-- Check to see if you are in postback. If not, display the contact form. -->
 <% If Not IsPostBack Then%>
@@ -28,6 +22,10 @@ Your message:<br />
 <!-- End your 'If' statement. -->
 <%End If%>
 
-    </form>
-</body>
-</html>
+
+</asp:Content>
+
+
+
+
+ 
