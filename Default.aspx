@@ -7,13 +7,15 @@
         <asp:SqlDataSource ID="sql_data" runat="server" ConnectionString="<%$ ConnectionStrings:rlutter.HW7 %>" SelectCommand="SELECT * FROM [rlutter.HW7]"></asp:SqlDataSource>
         <br />
     
-        <asp:GridView ID="gv_data" runat="server" AutoGenerateColumns="False" DataKeyNames="playerID" DataSourceID="sql_data">
+        <asp:GridView ID="gv_data" runat="server" AutoGenerateColumns="False" DataKeyNames="playerID" DataSourceID="sql_data" HorizontalAlign="Center">
             <Columns>
                 <asp:BoundField DataField="First Name" HeaderText="First Name" SortExpression="First Name" />
                 <asp:BoundField DataField="Last Name" HeaderText="Last Name" SortExpression="Last Name" />
                 <asp:HyperLinkField HeaderText="Select Player" Text="Select" DataNavigateUrlFields="playerID" DataNavigateUrlFormatString="playerdetails.aspx?playerID={0}" />
             </Columns>
         </asp:GridView>
+    <br />
+
 
 </asp:Content>
     
