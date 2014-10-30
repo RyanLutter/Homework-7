@@ -2,21 +2,20 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:SqlDataSource ID="sql_data" runat="server"></asp:SqlDataSource>
     
-<% If Not IsPostBack Then%>
+        <% If Not IsPostBack Then%>
         <p>
             Search for &lt;blank&gt;:
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
         </p>
-<% Else%>
-         Search for another &lt;blank&gt;:
+        <% Else%>Search for another &lt;blank&gt;:
             <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-        <asp:GridView ID="GridView1" runat="server">
+            <asp:GridView ID="GridView1" runat="server">
         </asp:GridView>
-<%End If%>
+        <%End If%>
 
 </asp:Content>
     

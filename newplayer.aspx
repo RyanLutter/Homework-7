@@ -7,92 +7,143 @@
 <asp:SqlDataSource ID="sql_data" runat="server" ConnectionString="<%$ ConnectionStrings:rlutter.HW7 %>" SelectCommand="SELECT * FROM [rlutter.HW7]"></asp:SqlDataSource>
         <br />
     
-    </div>
-        <asp:FormView ID="FormView1" runat="server" DataKeyNames="playerID" DataSourceID="sql_data">
+        <asp:FormView ID="fv_insert" runat="server" DataKeyNames="playerID" DataSourceID="sql_data" DefaultMode="Insert" HorizontalAlign="Center">
             <EditItemTemplate>
-                Team:
-                <asp:TextBox ID="TeamTextBox" runat="server" Text='<%# Bind("Team") %>' />
-                <br />
-                First Name:
-                <asp:TextBox ID="First_NameTextBox" runat="server" Text='<%# Bind("[First Name]") %>' />
-                <br />
-                Last Name:
-                <asp:TextBox ID="Last_NameTextBox" runat="server" Text='<%# Bind("[Last Name]") %>' />
-                <br />
-                Age:
-                <asp:TextBox ID="AgeTextBox" runat="server" Text='<%# Bind("Age") %>' />
-                <br />
-                Position:
-                <asp:TextBox ID="PositionTextBox" runat="server" Text='<%# Bind("Position") %>' />
-                <br />
-                Hometown:
-                <asp:TextBox ID="HometownTextBox" runat="server" Text='<%# Bind("Hometown") %>' />
-                <br />
-                College:
-                <asp:TextBox ID="CollegeTextBox" runat="server" Text='<%# Bind("College") %>' />
-                <br />
-                Salary:
-                <asp:TextBox ID="SalaryTextBox" runat="server" Text='<%# Bind("Salary") %>' />
-                <br />
-                <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
             </EditItemTemplate>
-            <InsertItemTemplate>
-                Team:
-                <asp:TextBox ID="TeamTextBox" runat="server" Text='<%# Bind("Team") %>' />
-                <br />
-                First Name:
-                <asp:TextBox ID="First_NameTextBox" runat="server" Text='<%# Bind("[First Name]") %>' />
-                <br />
-                Last Name:
-                <asp:TextBox ID="Last_NameTextBox" runat="server" Text='<%# Bind("[Last Name]") %>' />
-                <br />
-                Age:
-                <asp:TextBox ID="AgeTextBox" runat="server" Text='<%# Bind("Age") %>' />
-                <br />
-                Position:
-                <asp:TextBox ID="PositionTextBox" runat="server" Text='<%# Bind("Position") %>' />
-                <br />
-                Hometown:
-                <asp:TextBox ID="HometownTextBox" runat="server" Text='<%# Bind("Hometown") %>' />
-                <br />
-                College:
-                <asp:TextBox ID="CollegeTextBox" runat="server" Text='<%# Bind("College") %>' />
-                <br />
-                Salary:
-                <asp:TextBox ID="SalaryTextBox" runat="server" Text='<%# Bind("Salary") %>' />
-                <br />
-                <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-            </InsertItemTemplate>
-            <ItemTemplate>
-                Team:
-                <asp:Label ID="TeamLabel" runat="server" Text='<%# Bind("Team") %>' />
-                <br />
-                First Name:
-                <asp:Label ID="First_NameLabel" runat="server" Text='<%# Bind("[First Name]") %>' />
-                <br />
-                Last Name:
-                <asp:Label ID="Last_NameLabel" runat="server" Text='<%# Bind("[Last Name]") %>' />
-                <br />
-                Age:
-                <asp:Label ID="AgeLabel" runat="server" Text='<%# Bind("Age") %>' />
-                <br />
-                Position:
-                <asp:Label ID="PositionLabel" runat="server" Text='<%# Bind("Position") %>' />
-                <br />
-                Hometown:
-                <asp:Label ID="HometownLabel" runat="server" Text='<%# Bind("Hometown") %>' />
-                <br />
-                College:
-                <asp:Label ID="CollegeLabel" runat="server" Text='<%# Bind("College") %>' />
-                <br />
-                Salary:
-                <asp:Label ID="SalaryLabel" runat="server" Text='<%# Bind("Salary") %>' />
-                <br />
 
+            <InsertItemTemplate>
+                <table>
+                    <tr>
+                        <td style="text-align:right;">
+                        Team:
+                        </td>
+                        
+                        <td style="text-align:left;">
+                        <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("Team") %>' />
+                        </td>
+
+                        <td style="text-align:left;">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;">
+                        First Name:
+                        </td>
+
+                         <td style="text-align:left;">
+                        <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("[First Name]") %>' />
+                        </td>
+
+                         <td style="text-align:left;">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter a first name." CssClass="validation" ControlToValidate="TextBox2"></asp:RequiredFieldValidator>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;">
+                        Last Name:
+                        </td>
+                        
+                         <td style="text-align:left;">
+                        <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("[Last Name]") %>' />
+                        </td>
+
+                         <td style="text-align:left;">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please enter a last name." CssClass="validation" ControlToValidate="TextBox3"></asp:RequiredFieldValidator>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;">
+                        Age:
+                        </td>
+
+                         <td style="text-align:left;">
+                        <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("Age") %>' />
+                        </td>
+
+                         <td style="text-align:left;">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Please enter an age." CssClass="validation" ControlToValidate="TextBox4"></asp:RequiredFieldValidator>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;">
+                        Position:
+                        </td>
+
+                         <td style="text-align:left;">
+                        <asp:TextBox ID="TextBox5" runat="server" Text='<%# Bind("Position") %>' />
+                        </td>
+
+                         <td style="text-align:left;">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Positions: PG, SG, SF, PF and C." CssClass="validation" ControlToValidate="TextBox5"></asp:RequiredFieldValidator>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;">
+                        Hometown:
+                        </td>
+
+                         <td style="text-align:left;">
+                            <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("Hometown") %>' />
+                        </td>
+                        
+                         <td style="text-align:left;">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Please enter a hometown." CssClass="validation" ControlToValidate="TextBox6"></asp:RequiredFieldValidator>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;">
+                        College:
+                        </td>
+
+                         <td style="text-align:left;">
+                        <asp:TextBox ID="TextBox7" runat="server" Text='<%# Bind("College") %>' />
+                        </td>
+
+                         <td>
+                        
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;">
+                        Salary:
+                        </td>
+
+                         <td style="text-align:left;">
+                        <asp:TextBox ID="TextBox8" runat="server" Text='<%# Bind("Salary") %>' />
+                        </td>
+
+                         <td>
+
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">
+                           <asp:Button ID="btn_Insert" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" /> 
+                        </td>
+                        <td style="text-align:left;">
+                            <asp:Button ID="btn_Cancel" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                        </td>
+                    </tr>
+                   
+                </table>
+                
+                
+                &nbsp;
+            </InsertItemTemplate>
+
+            <ItemTemplate>
             </ItemTemplate>
+
         </asp:FormView>
+    <br />
 
 </asp:Content>
 

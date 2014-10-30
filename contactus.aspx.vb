@@ -1,8 +1,7 @@
 ﻿Imports System.Net.Mail
 Imports System.Net
 
-Partial Class Default3
-
+Partial Class contactus
     Inherits System.Web.UI.Page
 
     Protected Sub sendMail_Click(sender As Object, e As EventArgs) Handles sendMail.Click
@@ -27,5 +26,4 @@ Partial Class Default3
         'After the message has displayed for 2 seconds, "reload" the page.
         Response.AddHeader("REFRESH", "2;URL=default.aspx")
     End Sub
-
 End Class

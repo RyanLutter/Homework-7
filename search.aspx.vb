@@ -7,7 +7,7 @@ Partial Class search
 
         searchWord = "Select * From Tools where (toolName Like '%" + TextBox1.Text.ToString() + "%')"
 
-        <datasource>.SelectCommand = searchWord
+        sql_data.SelectCommand = searchWord
 
     End Sub
 
@@ -16,6 +16,6 @@ Partial Class search
 
         searchWord = "Select * From Tools where (toolName Like '%" + TextBox2.Text.ToString() + "%')"
 
-        <datasource>.SelectCommand = searchWord
+        sql_data.SelectCommand = searchWord
     End Sub
 End Class

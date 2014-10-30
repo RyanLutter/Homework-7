@@ -11,7 +11,7 @@
             <Columns>
                 <asp:BoundField DataField="First Name" HeaderText="First Name" SortExpression="First Name" />
                 <asp:BoundField DataField="Last Name" HeaderText="Last Name" SortExpression="Last Name" />
-                <asp:HyperLinkField HeaderText="Select Player" Text="Select" />
+                <asp:HyperLinkField HeaderText="Select Player" Text="Select" DataNavigateUrlFields="playerID" DataNavigateUrlFormatString="playerdetails.aspx?playerID={0}" />
             </Columns>
         </asp:GridView>
 
