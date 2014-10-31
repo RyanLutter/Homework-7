@@ -4,14 +4,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-        <asp:SqlDataSource ID="sql_data" runat="server" ConnectionString="<%$ ConnectionStrings:rlutter.HW7 %>" SelectCommand="SELECT * FROM [rlutter.HW7]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="sql_data" runat="server" ConnectionString="<%$ ConnectionStrings:rlutter_HW7 %>" SelectCommand="SELECT * FROM [rlutter_HW7]"></asp:SqlDataSource>
         <br />
     
         <asp:GridView ID="gv_data" runat="server" AutoGenerateColumns="False" DataKeyNames="playerID" DataSourceID="sql_data" HorizontalAlign="Center">
             <Columns>
-                <asp:BoundField DataField="First Name" HeaderText="First Name" SortExpression="First Name" />
-                <asp:BoundField DataField="Last Name" HeaderText="Last Name" SortExpression="Last Name" />
-                <asp:HyperLinkField HeaderText="Select Player" Text="Select" DataNavigateUrlFields="playerID" DataNavigateUrlFormatString="playerdetails.aspx?playerID={0}" />
+                <asp:BoundField DataField="First_Name" HeaderText="First_Name" SortExpression="First_Name" />
+                <asp:BoundField DataField="Last_Name" HeaderText="Last_Name" SortExpression="Last_Name" />
+                <asp:HyperLinkField HeaderText="Details of Player" NavigateUrl="./playerdetails.aspx" Text="Select" />
             </Columns>
         </asp:GridView>
     <br />
