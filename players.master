@@ -12,12 +12,19 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <span class ="header">
-        NBA Players' Website
+    
+        <div id ="wrap">
+            <div id="header">
+                <div id="logo"><asp:Image ID="Image1" runat="server" Height="75px" ImageUrl="~/Images/Basketball.jpg" Width="130px" /></div>
+                <div id="title">NBA Player's Website<br />
+                    *** Normal User ***</div>
+                <div id="logo"> <asp:Image ID="Image2" runat="server" Height="75px" ImageUrl="~/Images/Basketball2.jpg" Width="130px" /></div>
 
-    </span>
+                    <br clear="all" />
+        </div>
 
-        <asp:Menu ID="navigationBar" runat="server" Orientation="Horizontal" RenderingMode="Table" Height="20px" Width="750px">
+        <div id="navbar">
+        <asp:Menu ID="navigationBar" runat="server" Orientation="Horizontal" RenderingMode="Table" Height="20px" Width="700px">
             <Items>
                 <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/aboutus.aspx" Text="About Us" Value="About Us"></asp:MenuItem>
@@ -30,10 +37,18 @@
             <StaticMenuStyle BorderStyle="None" CssClass="menu" />
             <StaticSelectedStyle CssClass="menu" />
         </asp:Menu>
+        </div>
+
+        <div id="date">
+        Todays Date is:
+        <asp:Label ID="dateLabel" runat="server"></asp:Label>
+        </div>
+        </div>
+
+           
+        <br clear="all" />
 
         <hr style="color: white" />
-
-
 
         <div id="main">
             <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
@@ -45,9 +60,6 @@
         <hr style="color: white" />
         Copyright © 2014. Created by Ryan Lutter.
         </span>
-        <br />
-        Todays Date is:
-        <asp:Label ID="dateLabel" runat="server"></asp:Label>
     </form>
 </body>
 </html>

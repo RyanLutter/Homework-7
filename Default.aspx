@@ -11,7 +11,7 @@
             <Columns>
                 <asp:BoundField DataField="First_Name" HeaderText="First Name" SortExpression="First_Name" />
                 <asp:BoundField DataField="Last_Name" HeaderText="Last Name" SortExpression="Last_Name" />
-                <asp:HyperLinkField HeaderText="Details of Player" NavigateUrl="./playerdetails.aspx" Text="Select" />
+                <asp:HyperLinkField HeaderText="Details of Player" DataNavigateUrlFormatString="playerdetails.aspx?playerID={0}" Text="Select" DataNavigateUrlFields="playerID" />
             </Columns>
                     <FooterStyle BackColor="#CCCC99" />
                     <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />

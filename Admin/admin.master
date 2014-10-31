@@ -12,16 +12,21 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <span class ="header">
-        NBA Players' Website
-        <br />
-        * ADMIN WEBSITE *
-    </span>
+<div id ="wrap">
+            <div id="header">
+                <div id="logo"><asp:Image ID="Image1" runat="server" Height="75px" ImageUrl="~/Images/Basketball.jpg" Width="130px" /></div>
+                <div id="title">NBA Player's Website<br />
+                    *** ADMIN ***</div>
+                <div id="logo"> <asp:Image ID="Image2" runat="server" Height="75px" ImageUrl="~/Images/Basketball2.jpg" Width="130px" /></div>
 
-        <asp:Menu ID="navigationBar" runat="server" Orientation="Horizontal" RenderingMode="Table" Height="20px" Width="750px">
+                    <br clear="all" />
+        </div>
+
+        <div id="navbar">
+        <asp:Menu ID="navigationBar" runat="server" Orientation="Horizontal" RenderingMode="Table" Height="20px" Width="700px">
             <Items>
-                <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
-                <asp:MenuItem NavigateUrl="~/Admin/newplayer.aspx" Text="New Player" Value="New Player"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Admin/Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Admin/Adminnewplayer.aspx" Text="New Player" Value="New Player"></asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/Admin/Adminaboutus.aspx" Text="About Us" Value="About Us"></asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/Admin/Admincontactus.aspx" Text="Contact Us" Value="Contact Us"></asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/Admin/Adminsearch.aspx" Text="Search" Value="Search"></asp:MenuItem>
@@ -31,6 +36,16 @@
             <StaticMenuStyle BorderStyle="None" CssClass="menu" />
             <StaticSelectedStyle CssClass="menu" />
         </asp:Menu>
+        </div>
+
+        <div id="date">
+        Todays Date is:
+        <asp:Label ID="dateLabel" runat="server"></asp:Label>
+        </div>
+        </div>
+
+           
+        <br clear="all" />
 
         <hr style="color: red" />
 
@@ -46,9 +61,6 @@
         <hr style="color: red" />
         Copyright © 2014. Created by Ryan Lutter.
         </span>
-        <br />
-        Todays Date is:
-        <asp:Label ID="dateLabel" runat="server"></asp:Label>
     </form>
 </body>
 </html>

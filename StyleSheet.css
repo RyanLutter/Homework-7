@@ -1,20 +1,12 @@
 ﻿body {
     background-color: gray;
-    width:750px;
+    width:1000px;
 	margin:0px auto;
 	text-align:center;
 	padding:15px;
     align-content: center;
     align-items: center;
     text-decoration: none;
-}
-
-.header {
-    font-size: xx-large;
-    color: #000000;
-    font-weight: bold;
-    font-family: "Bell MT";
-    text-align: center;
 }
 
 .menu {
@@ -75,4 +67,49 @@
 
 .left{
     text-align:left;
+}
+
+#wrap{
+    margin: 0 auto;
+}
+
+#header{   
+     padding: 5px 10px;
+}
+
+#logo {
+    float: left;
+    width: 15%;
+    text-align: center;
+    background-color: transparent;
+    height: 75px;
+}
+
+#title{
+    float: left;
+    width: 65%;
+    text-align: center;
+    background-color: transparent;
+    font-size: xx-large;
+    color: #000000;
+    font-weight: bold;
+    height: 75px;
+    align-content:center;
+}
+
+#navbar {
+    float: left;
+    width: 70%;
+    text-align: center;
+    background-color: transparent;
+}
+
+#date{
+    float: left;
+    width: 28%;
+    text-align: center;
+    align-content: center;
+    background-color: transparent;
+    padding-left: 10px;
+    font-weight: bold;
 }
