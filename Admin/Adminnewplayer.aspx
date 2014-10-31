@@ -33,8 +33,7 @@
         <br />
     
         <asp:FormView ID="fv_insert" runat="server" DataKeyNames="playerID" DataSourceID="sql_data" DefaultMode="Insert" HorizontalAlign="Center">
-            <EditItemTemplate>
-               
+            <EditItemTemplate>   
             </EditItemTemplate>
 
             <InsertItemTemplate>
@@ -137,7 +136,6 @@
 
             <ItemTemplate>
             </ItemTemplate>
-
         </asp:FormView>
     <br />
 

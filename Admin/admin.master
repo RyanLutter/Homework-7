@@ -1,10 +1,10 @@
-﻿<%@ Master Language="VB" CodeFile="players.master.vb" Inherits="players" %>
+﻿<%@ Master Language="VB" CodeFile="admin.master.vb" Inherits="players" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
- <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+ <link href="AdminStyleSheet.css" rel="stylesheet" type="text/css" />
     <title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -14,16 +14,17 @@
     <form id="form1" runat="server">
     <span class ="header">
         NBA Players' Website
-
+        <br />
+        * ADMIN WEBSITE *
     </span>
 
         <asp:Menu ID="navigationBar" runat="server" Orientation="Horizontal" RenderingMode="Table" Height="20px" Width="750px">
             <Items>
                 <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
-                <asp:MenuItem NavigateUrl="~/aboutus.aspx" Text="About Us" Value="About Us"></asp:MenuItem>
-                <asp:MenuItem NavigateUrl="~/contactus.aspx" Text="Contact Us" Value="Contact Us"></asp:MenuItem>
-                <asp:MenuItem NavigateUrl="~/login.aspx" Text="Login" Value="Login"></asp:MenuItem>
-                <asp:MenuItem NavigateUrl="~/search.aspx" Text="Search" Value="Search"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Admin/newplayer.aspx" Text="New Player" Value="New Player"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Admin/Adminaboutus.aspx" Text="About Us" Value="About Us"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Admin/Admincontactus.aspx" Text="Contact Us" Value="Contact Us"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Admin/Adminsearch.aspx" Text="Search" Value="Search"></asp:MenuItem>
             </Items>
             <StaticHoverStyle ForeColor="Black" CssClass="menu" />
             <StaticMenuItemStyle CssClass="menu" />
@@ -31,7 +32,7 @@
             <StaticSelectedStyle CssClass="menu" />
         </asp:Menu>
 
-        <hr style="color: white" />
+        <hr style="color: red" />
 
 
 
@@ -42,7 +43,7 @@
         </div>
 
         <span class="footer">
-        <hr style="color: white" />
+        <hr style="color: red" />
         Copyright © 2014. Created by Ryan Lutter.
         </span>
         <br />

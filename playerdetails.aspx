@@ -8,7 +8,7 @@
     </asp:SqlDataSource>
     <br />
         
-        <asp:DetailsView ID="dv_details" runat="server" AutoGenerateRows="False" DataKeyNames="playerID" DataSourceID="sql_data" Height="50px" Width="215px" HorizontalAlign="Center">
+        <asp:DetailsView ID="dv_details" runat="server" AutoGenerateRows="False" DataKeyNames="playerID" DataSourceID="sql_data" Height="50px" Width="215px" HorizontalAlign="Center" CssClass="border">
             <Fields>
                 <asp:BoundField DataField="Team" HeaderText="Team" SortExpression="Team" />
                 <asp:BoundField DataField="First_Name" HeaderText="First Name" SortExpression="First_Name" />
@@ -19,6 +19,10 @@
                 <asp:BoundField DataField="College" HeaderText="College" SortExpression="College" />
                 <asp:BoundField DataField="Money" HeaderText="Salary" SortExpression="Money" />
             </Fields>
+                    <FooterStyle BackColor="#CCCC99" />
+                    <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+                    <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+                    <AlternatingRowStyle BackColor="White" />
     </asp:DetailsView>
         
         <br />
