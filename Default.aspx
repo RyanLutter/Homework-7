@@ -9,9 +9,15 @@
     
         <asp:GridView ID="gv_data" runat="server" AutoGenerateColumns="False" DataKeyNames="playerID" DataSourceID="sql_data" HorizontalAlign="Center" CssClass="border">
             <Columns>
-                <asp:BoundField DataField="First_Name" HeaderText="First Name" SortExpression="First_Name" />
-                <asp:BoundField DataField="Last_Name" HeaderText="Last Name" SortExpression="Last_Name" />
-                <asp:HyperLinkField HeaderText="Details of Player" DataNavigateUrlFormatString="playerdetails.aspx?playerID={0}" Text="Select" DataNavigateUrlFields="playerID" />
+                <asp:BoundField DataField="First_Name" HeaderText="First Name" SortExpression="First_Name" >
+                <ItemStyle HorizontalAlign="Center" />
+                </asp:BoundField>
+                <asp:BoundField DataField="Last_Name" HeaderText="Last Name" SortExpression="Last_Name" >
+                <ItemStyle HorizontalAlign="Center" />
+                </asp:BoundField>
+                <asp:HyperLinkField HeaderText="Details of Player" DataNavigateUrlFormatString="playerdetails.aspx?playerID={0}" Text="Select" DataNavigateUrlFields="playerID" >
+                <ItemStyle Font-Bold="True" HorizontalAlign="Center" />
+                </asp:HyperLinkField>
             </Columns>
                     <FooterStyle BackColor="#CCCC99" />
                     <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />

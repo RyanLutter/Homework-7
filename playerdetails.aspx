@@ -8,23 +8,106 @@
     </asp:SqlDataSource>
     <br />
         
-        <asp:DetailsView ID="dv_details" runat="server" AutoGenerateRows="False" DataKeyNames="playerID" DataSourceID="sql_data" Height="50px" Width="215px" HorizontalAlign="Center" CssClass="border">
-            <Fields>
-                <asp:BoundField DataField="playerID" HeaderText="playerID" SortExpression="playerID" InsertVisible="False" ReadOnly="True" />
-                <asp:BoundField DataField="Team" HeaderText="Team" SortExpression="Team" />
-                <asp:BoundField DataField="First_Name" HeaderText="First_Name" SortExpression="First_Name" />
-                <asp:BoundField DataField="Last_Name" HeaderText="Last_Name" SortExpression="Last_Name" />
-                <asp:BoundField DataField="Age" HeaderText="Age" SortExpression="Age" />
-                <asp:BoundField DataField="Position" HeaderText="Position" SortExpression="Position" />
-                <asp:BoundField DataField="Hometown" HeaderText="Hometown" SortExpression="Hometown" />
-                <asp:BoundField DataField="College" HeaderText="College" SortExpression="College" />
-                <asp:BoundField DataField="Money" HeaderText="Money" SortExpression="Money" />
-            </Fields>
-                    <FooterStyle BackColor="#CCCC99" />
-                    <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
-                    <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
-                    <AlternatingRowStyle BackColor="White" />
-    </asp:DetailsView>
+    <asp:FormView ID="fv_details" runat="server" DataKeyNames="playerID" DataSourceID="sql_data" HorizontalAlign="Center">
+        <EditItemTemplate>
+        </EditItemTemplate>
+
+        <InsertItemTemplate>
+        </InsertItemTemplate>
+
+        <ItemTemplate>
+        <table>
+                <tr>
+                <td style="text-align:right;">
+                    Team:
+                </td>
+
+                <td style="text-align:left;">
+                    <asp:Label ID="TeamLabel" runat="server" Text='<%# Bind("Team") %>' />
+                </td>
+
+                </tr>
+                <tr>
+
+                <td style="text-align:right;">
+                    First Name:
+                </td>
+
+                <td style="text-align:left;">
+                    <asp:Label ID="First_NameLabel" runat="server" Text='<%# Bind("First_Name") %>' />
+                </td>
+
+                </tr>
+                <tr>
+
+                <td style="text-align:right;">
+                Last_Name:
+                </td>
+
+                <td style="text-align:left;">
+                <asp:Label ID="Last_NameLabel" runat="server" Text='<%# Bind("Last_Name") %>' />
+                </td>
+
+                </tr>
+                <tr>
+
+                <td style="text-align:right">
+                Age:
+                </td>
+
+                <td style="text-align:left;">
+                <asp:Label ID="AgeLabel" runat="server" Text='<%# Bind("Age") %>' />
+                </td>
+
+                </tr>
+                <tr>
+
+                <td style="text-align:right;">
+                Position:
+                </td>
+
+                <td style="text-align:left;">
+                <asp:Label ID="PositionLabel" runat="server" Text='<%# Bind("Position") %>' />
+                </td>
+
+                </tr>
+                <tr>
+
+                <td style="text-align:right;">
+                Hometown:
+                </td>
+
+                <td style="text-align:left;">
+                <asp:Label ID="HometownLabel" runat="server" Text='<%# Bind("Hometown") %>' />
+                </td>
+
+                </tr>
+                <tr>
+
+                <td style="text-align:right;">
+                College:
+                </td>
+
+                <td style="text-align:left;">
+                <asp:Label ID="CollegeLabel" runat="server" Text='<%# Bind("College") %>' />
+                </td>
+
+                </tr>
+                <tr>
+
+                <td style="text-align:right;">
+                Money:
+                </td>
+
+                <td style="text-align:left;">
+                <asp:Label ID="MoneyLabel" runat="server" Text='<%# Bind("Money") %>' />
+                </td>
+
+                </tr>
+
+        </table>
+        </ItemTemplate>
+    </asp:FormView>
         
         <br />
     
