@@ -50,7 +50,7 @@
                 </tr>
                 <tr>
                 <td style="text-align:right;">
-                    First Name:
+                    First Name: *
                 </td>
                 <td style="text-align:left;">
                     <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("First_Name")%>' />
@@ -61,7 +61,7 @@
                 </tr>
                 <tr>
                 <td style="text-align:right;">
-                    Last Name:
+                    Last Name: *
                 </td>
                 <td style="text-align:left;">
                     <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("Last_Name")%>' />
@@ -72,7 +72,7 @@
                 </tr>
                 <tr>
                 <td style="text-align:right;">
-                    Age:
+                    Age: *
                 </td>
                 <td style="text-align:left;">
                     <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("Age") %>' />
@@ -83,7 +83,7 @@
                 </tr>
                 <tr>
                 <td style="text-align:right;">
-                    Position:
+                    Position: *
                 </td>
                 <td style="text-align:left;">
                     <asp:TextBox ID="TextBox5" runat="server" Text='<%# Bind("Position") %>' />
@@ -94,7 +94,7 @@
                 </tr>
                 <tr>
                 <td style="text-align:right;">
-                    Hometown:
+                    Hometown: *
                 </td>
                 <td style="text-align:left;">
                     <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("Hometown") %>' />

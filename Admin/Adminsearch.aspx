@@ -8,7 +8,7 @@
     
     <br />
 
-            Search for another player by name:
+            Search for  player by first and last name:
             <asp:TextBox ID="tb_player" runat="server"></asp:TextBox>
 
             <br />

@@ -52,7 +52,7 @@
                  </tr>
                  <tr>
                  <td style="text-align:right;">
-                 First Name:
+                 First Name: *
                  </td>
 
                  <td style="text-align:left;">
@@ -66,7 +66,7 @@
                  </tr>
                  <tr>
                  <td style="text-align:right;">
-                 Last Name:
+                 Last Name: *
                  </td>
 
                  <td style="text-align:left;">
@@ -80,7 +80,7 @@
                  </tr>
                  <tr>
                  <td style="text-align:right;">
-                 Age:
+                 Age: *
                  </td>
 
                  <td style="text-align:left;">
@@ -94,7 +94,7 @@
                  </tr>
                  <tr>
                  <td style="text-align:right;">
-                 Position:
+                 Position: *
                  </td>
 
                  <td style="text-align:left;">
@@ -108,7 +108,7 @@
                  </tr>
                  <tr>
                  <td style="text-align:right;">
-                 Hometown:
+                 Hometown: *
                  </td>
 
                  <td style="text-align:left;">
