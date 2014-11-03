@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: gray;
+    background-color: #B22518;
     width:1000px;
 	margin:0px auto;
 	text-align:center;
@@ -11,7 +11,7 @@
 
 .header {
     font-size: xx-large;
-    color: red;
+    color: #DDFF23;
     font-weight: bold;
     font-family: "Bell MT";
     text-align: center;
@@ -103,7 +103,7 @@
     font-weight: bold;
     height: 75px;
     align-content:center;
-    color: red;
+    color: #DDFF23;
 }
 
 #navbar {

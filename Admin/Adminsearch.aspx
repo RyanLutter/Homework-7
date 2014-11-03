@@ -6,13 +6,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <asp:SqlDataSource ID="sql_playerdata" runat="server" ConnectionString="<%$ ConnectionStrings:rlutter_HW7 %>" SelectCommand="SELECT * FROM [rlutter_HW7]"></asp:SqlDataSource>
     
-        <% If Not IsPostBack Then%>
-        <p>
-            Search for player by name:
-            <asp:TextBox ID="tb_playerone" runat="server"></asp:TextBox>
-        </p>
-        <% Else%>Search for another player by name:
-            <asp:TextBox ID="tb_playertwo" runat="server"></asp:TextBox>
+    <br />
+
+            Search for another player by name:
+            <asp:TextBox ID="tb_player" runat="server"></asp:TextBox>
 
             <br />
             <br />
@@ -34,7 +31,6 @@
                     <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
                     <AlternatingRowStyle BackColor="White" />
         </asp:GridView>
-        <% End If%>
     <br />
 
 </asp:Content>
