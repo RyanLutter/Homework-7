@@ -14,7 +14,7 @@
             <br />
             <br />
 
-            <asp:GridView ID="gv_search" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="playerID" DataSourceID="sql_playerdata" ForeColor="Black" GridLines="Vertical" HorizontalAlign="Center" CssClass="border">
+            <asp:GridView ID="gv_search" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="playerID" DataSourceID="sql_playerdata" ForeColor="Black" GridLines="Vertical" HorizontalAlign="Center" CssClass="view">
                 <Columns>
                     <asp:BoundField DataField="Team" HeaderText="Team" SortExpression="Team" />
                     <asp:BoundField DataField="First_Name" HeaderText="First Name" SortExpression="First_Name" />
@@ -25,11 +25,6 @@
                     <asp:BoundField DataField="College" HeaderText="College" SortExpression="College" />
                     <asp:BoundField DataField="Money" HeaderText="Salary" SortExpression="Money" />
                 </Columns>
-                    <FooterStyle BackColor="#CCCC99" />
-                    <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
-                    <SelectedRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
-                    <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
-                    <AlternatingRowStyle BackColor="White" />
         </asp:GridView>
 
     <br />

@@ -32,7 +32,7 @@
     </asp:SqlDataSource>
         <br />
     
-        <asp:FormView ID="fv_insert" runat="server" DataKeyNames="playerID" DataSourceID="sql_data" DefaultMode="Insert" HorizontalAlign="Center">
+        <asp:FormView ID="fv_insert" runat="server" DataKeyNames="playerID" DataSourceID="sql_data" DefaultMode="Insert" HorizontalAlign="Center" CssClass="view">
             <EditItemTemplate>   
             </EditItemTemplate>
 
@@ -130,6 +130,9 @@
                 <td style="text-align:left;">
                     <asp:Button ID="btn_Cancel" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
                 </td>
+                <td>
+
+                </td>
                 </tr>
             </table>
             </InsertItemTemplate>
@@ -137,6 +140,8 @@
             <ItemTemplate>
             </ItemTemplate>
         </asp:FormView>
+    <asp:Label ID="updateLabel" runat="server" Font-Bold="True" Font-Size="XX-Large"></asp:Label>
+    <br />
     <br />
 
 </asp:Content>

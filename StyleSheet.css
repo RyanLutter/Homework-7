@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: gray;
+    background-color: #0E5EFF;
     width:1000px;
 	margin:0px auto;
 	text-align:center;
@@ -17,56 +17,6 @@
     margin:0px auto;
     color: black;
     font-weight: bold;
-}
-
-.border{
-    border: 2px solid;
-}
-
-
-.gridview {
-}
-
-.gridview td {
-}
-
-.gridview th  {
-}
-
-.gridview .alt {
-    }
-
-
-.detailview {
-}
-
-.detailview td {
-}
-
-.detailview th  {
-}
-
-.formview {
-}
-
-.formview td {
-}
-
-.formview th  {
-}
-
-.footer {
-    font-weight: bold;
-}
-
-.validation{
-    color: red;
-    font-weight: bold;
-    text-align:right;
-}
-
-.left{
-    text-align:left;
 }
 
 #wrap{
@@ -113,3 +63,45 @@
     padding-left: 10px;
     font-weight: bold;
 }
+
+
+
+.view {
+    width: auto; 
+    margin: 5px 0 10px 0; 
+    border: solid 10px white; 
+    border-collapse: collapse; 
+    text-align: center;
+}
+
+.view td {
+    padding: 10px; 
+    border: solid 1px white; 
+    color: white;
+    background-color: #FF8806;
+}
+
+.view th  {
+    padding: 10px; 
+    color: white; 
+    background: #CC4D00; 
+    border-left: solid 1px white; 
+}
+
+
+
+.footer {
+    font-weight: bold;
+}
+
+.validation{
+    color: red;
+    font-weight: bold;
+    text-align:right;
+}
+
+.left{
+    text-align:left;
+}
+
+

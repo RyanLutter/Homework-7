@@ -31,7 +31,7 @@
         </UpdateParameters>
     </asp:SqlDataSource>
 
-    <asp:FormView ID="FormView1" runat="server" DataSourceID="sql_data" DataKeyNames="playerID" HorizontalAlign="Center">
+    <asp:FormView ID="fv_details" runat="server" DataSourceID="sql_data" DataKeyNames="playerID" HorizontalAlign="Center" CssClass="view">
         <EditItemTemplate>
             <table>
                  <tr>
@@ -186,7 +186,7 @@
                 <tr>
 
                 <td style="text-align:right;">
-                Last_Name:
+                Last Name:
                 </td>
 
                 <td style="text-align:left;">
@@ -241,7 +241,7 @@
                 <tr>
 
                 <td style="text-align:right;">
-                Money:
+                Salary:
                 </td>
 
                 <td style="text-align:left;">
@@ -263,6 +263,8 @@
         </table>
         </ItemTemplate>
     </asp:FormView>
+
+    <asp:Label ID="updateLabel" runat="server" Font-Bold="True" Font-Size="XX-Large"></asp:Label>
 
 </asp:Content>
 

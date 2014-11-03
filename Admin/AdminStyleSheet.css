@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: #B22518;
+    background-color: #FF0F00;
     width:1000px;
 	margin:0px auto;
 	text-align:center;
@@ -11,7 +11,7 @@
 
 .header {
     font-size: xx-large;
-    color: #DDFF23;
+    color: #00FFAD;
     font-weight: bold;
     font-family: "Bell MT";
     text-align: center;
@@ -27,40 +27,26 @@
     font-weight: bold;
 }
 
-.border{
-    border: 2px solid;
+.view {
+    width: auto; 
+    margin: 5px 0 10px 0; 
+    border: solid 10px white; 
+    border-collapse: collapse; 
+    text-align: center;
 }
 
-
-.gridview {
+.view td {
+    padding: 10px; 
+    border: solid 1px white; 
+    color: white;
+    background-color: #10A1CC;
 }
 
-.gridview td {
-}
-
-.gridview th  {
-}
-
-.gridview .alt {
-    }
-
-
-.detailview {
-}
-
-.detailview td {
-}
-
-.detailview th  {
-}
-
-.formview {
-}
-
-.formview td {
-}
-
-.formview th  {
+.view th  {
+    padding: 10px; 
+    color: white; 
+    background: #1A7C99; 
+    border-left: solid 1px white; 
 }
 
 .footer {

@@ -8,7 +8,7 @@
     </asp:SqlDataSource>
     <br />
         
-    <asp:FormView ID="fv_details" runat="server" DataKeyNames="playerID" DataSourceID="sql_data" HorizontalAlign="Center">
+    <asp:FormView ID="fv_details" runat="server" DataKeyNames="playerID" DataSourceID="sql_data" HorizontalAlign="Center" CssClass="view">
         <EditItemTemplate>
         </EditItemTemplate>
 
@@ -41,7 +41,7 @@
                 <tr>
 
                 <td style="text-align:right;">
-                Last_Name:
+                Last Name:
                 </td>
 
                 <td style="text-align:left;">
@@ -96,7 +96,7 @@
                 <tr>
 
                 <td style="text-align:right;">
-                Money:
+                Salary:
                 </td>
 
                 <td style="text-align:left;">
