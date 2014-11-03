@@ -14,10 +14,10 @@
     <form id="form1" runat="server">
 <div id ="wrap">
             <div id="header">
-                <div id="logo"><asp:Image ID="Image1" runat="server" Height="75px" ImageUrl="~/Images/Basketball.jpg" Width="130px" /></div>
+                <div id="logo"><asp:Image ID="Image1" runat="server" Height="75px" ImageUrl="~/Images/Basketball.png" Width="130px" /></div>
                 <div id="title">NBA Player's Website<br />
                     *** ADMIN ***</div>
-                <div id="logo"> <asp:Image ID="Image2" runat="server" Height="75px" ImageUrl="~/Images/Basketball2.jpg" Width="130px" /></div>
+                <div id="logo"> <asp:Image ID="Image2" runat="server" Height="75px" ImageUrl="~/Images/Basketball.png" Width="130px" /></div>
 
                     <br clear="all" />
         </div>

@@ -15,10 +15,10 @@
     
         <div id ="wrap">
             <div id="header">
-                <div id="logo"><asp:Image ID="Image1" runat="server" Height="75px" ImageUrl="~/Images/Basketball.jpg" Width="130px" /></div>
+                <div id="logo"><asp:Image ID="Image1" runat="server" Height="75px" ImageUrl="~/Images/Basketball.png" Width="130px" /></div>
                 <div id="title">NBA Player's Website<br />
                     *** Normal User ***</div>
-                <div id="logo"> <asp:Image ID="Image2" runat="server" Height="75px" ImageUrl="~/Images/Basketball2.jpg" Width="130px" /></div>
+                <div id="logo"> <asp:Image ID="Image2" runat="server" Height="75px" ImageUrl="~/Images/Basketball.png" Width="130px" /></div>
 
                     <br clear="all" />
         </div>
@@ -29,8 +29,8 @@
                 <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/aboutus.aspx" Text="About Us" Value="About Us"></asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/contactus.aspx" Text="Contact Us" Value="Contact Us"></asp:MenuItem>
-                <asp:MenuItem NavigateUrl="~/Admin/Default.aspx" Text="Login" Value="Login"></asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/search.aspx" Text="Search" Value="Search"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Admin/Default.aspx" Text="Admin Site" Value="Login"></asp:MenuItem>
             </Items>
             <StaticHoverStyle ForeColor="Black" CssClass="menu" />
             <StaticMenuItemStyle CssClass="menu" />

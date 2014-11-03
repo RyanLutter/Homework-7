@@ -4,7 +4,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <asp:SqlDataSource ID="sql_data" runat="server" ConnectionString="<%$ ConnectionStrings:rlutter_HW7 %>" SelectCommand="SELECT * FROM [rlutter_HW7]">
+    <asp:SqlDataSource ID="sql_data" runat="server" ConnectionString="<%$ ConnectionStrings:rlutter_HW7 %>" SelectCommand="SELECT * FROM [rlutter_HW7] WHERE ([playerID] = @playerID)">
+        <SelectParameters>
+            <asp:QueryStringParameter Name="playerID" QueryStringField="playerID" Type="Int32" />
+        </SelectParameters>
     </asp:SqlDataSource>
     <br />
         

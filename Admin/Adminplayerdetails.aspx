@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <asp:SqlDataSource ID="sql_data" runat="server" ConnectionString="<%$ ConnectionStrings:rlutter_HW7 %>" SelectCommand="SELECT * FROM [rlutter_HW7]" DeleteCommand="DELETE FROM [rlutter_HW7] WHERE [playerID] = @playerID" InsertCommand="INSERT INTO [rlutter_HW7] ([Team], [First_Name], [Last_Name], [Age], [Position], [Hometown], [College], [Money]) VALUES (@Team, @First_Name, @Last_Name, @Age, @Position, @Hometown, @College, @Money)" UpdateCommand="UPDATE [rlutter_HW7] SET [Team] = @Team, [First_Name] = @First_Name, [Last_Name] = @Last_Name, [Age] = @Age, [Position] = @Position, [Hometown] = @Hometown, [College] = @College, [Money] = @Money WHERE [playerID] = @playerID">
+    <asp:SqlDataSource ID="sql_data" runat="server" ConnectionString="<%$ ConnectionStrings:rlutter_HW7 %>" SelectCommand="SELECT * FROM [rlutter_HW7] WHERE ([playerID] = @playerID)" DeleteCommand="DELETE FROM [rlutter_HW7] WHERE [playerID] = @playerID" InsertCommand="INSERT INTO [rlutter_HW7] ([Team], [First_Name], [Last_Name], [Age], [Position], [Hometown], [College], [Money]) VALUES (@Team, @First_Name, @Last_Name, @Age, @Position, @Hometown, @College, @Money)" UpdateCommand="UPDATE [rlutter_HW7] SET [Team] = @Team, [First_Name] = @First_Name, [Last_Name] = @Last_Name, [Age] = @Age, [Position] = @Position, [Hometown] = @Hometown, [College] = @College, [Money] = @Money WHERE [playerID] = @playerID">
         <DeleteParameters>
             <asp:Parameter Name="playerID" Type="Int32" />
         </DeleteParameters>
@@ -18,6 +18,9 @@
             <asp:Parameter Name="College" Type="String" />
             <asp:Parameter Name="Money" Type="String" />
         </InsertParameters>
+        <SelectParameters>
+            <asp:QueryStringParameter Name="playerID" QueryStringField="playerID" Type="Int32" />
+        </SelectParameters>
         <UpdateParameters>
             <asp:Parameter Name="Team" Type="String" />
             <asp:Parameter Name="First_Name" Type="String" />
@@ -151,6 +154,9 @@
                  </td>
                  <td style="text-align:left;">
                  <asp:Button ID="btn_Cancel" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                 </td>
+                 <td>
+
                  </td>
                  </tr>
 
