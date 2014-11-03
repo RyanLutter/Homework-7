@@ -30,6 +30,7 @@
                 <asp:MenuItem NavigateUrl="~/Admin/Adminaboutus.aspx" Text="About Us" Value="About Us"></asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/Admin/Admincontactus.aspx" Text="Contact Us" Value="Contact Us"></asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/Admin/Adminsearch.aspx" Text="Search" Value="Search"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Regular Site" Value="Regular Site"></asp:MenuItem>
             </Items>
             <StaticHoverStyle ForeColor="Black" CssClass="menu" />
             <StaticMenuItemStyle CssClass="menu" />

@@ -8,7 +8,7 @@ Partial Class contactus
         'Declare variables to create a new mail message and client connection.
         Dim msg As New MailMessage
         Dim client As New SmtpClient
-        msg.To.Add("ryan-lutter@uiowa.edu") 'destination email address
+        msg.To.Add("michael-colbert@uiowa.edu") 'destination email address
         msg.From = New MailAddress(senderAddress.Text) 'get the address from the textbox
         msg.Subject = "Recipe Email" 'set the message subject line
         msg.Body = senderMessage.Text 'get the message body from the textbox

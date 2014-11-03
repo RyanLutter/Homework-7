@@ -8,4 +8,7 @@ Partial Class login
 
     End Sub
 
+    Protected Sub Login1_LoggedIn(sender As Object, e As EventArgs) Handles Login1.LoggedIn
+
+    End Sub
 End Class

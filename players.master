@@ -29,7 +29,7 @@
                 <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/aboutus.aspx" Text="About Us" Value="About Us"></asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/contactus.aspx" Text="Contact Us" Value="Contact Us"></asp:MenuItem>
-                <asp:MenuItem NavigateUrl="~/login.aspx" Text="Login" Value="Login"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Admin/Default.aspx" Text="Login" Value="Login"></asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/search.aspx" Text="Search" Value="Search"></asp:MenuItem>
             </Items>
             <StaticHoverStyle ForeColor="Black" CssClass="menu" />

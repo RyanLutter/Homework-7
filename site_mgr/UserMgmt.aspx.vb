@@ -29,7 +29,7 @@ Partial Class site_mgr_AddNewUser
     Public Sub BindUsers()
 
         Dim queryString As String = "SELECT UserName FROM dbo.aspnet_Users"
-        Dim connectionString As String = ConfigurationManager.ConnectionStrings("db_stateFacts").ConnectionString
+        Dim connectionString As String = ConfigurationManager.ConnectionStrings("rlutter_HW7").ConnectionString
 
         Dim da As SqlDataAdapter = New SqlDataAdapter(queryString, connectionString)
         Dim ds As New DataSet
