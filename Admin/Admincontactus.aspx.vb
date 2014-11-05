@@ -26,4 +26,10 @@ Partial Class contactus
         'After the message has displayed for 2 seconds, "reload" the page.
         Response.AddHeader("REFRESH", "2;URL=default.aspx")
     End Sub
+
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+
+        senderAddress.Focus()
+
+    End Sub
 End Class

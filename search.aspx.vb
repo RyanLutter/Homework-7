@@ -17,6 +17,8 @@ Partial Class search
 
         gv_search.Visible = False
 
+        tb_player.Focus()
+
     End Sub
 
 End Class

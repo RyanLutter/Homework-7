@@ -9,5 +9,11 @@ Partial Class players
 
     End Sub
 
+
+    Protected Sub timeLabel_Load(sender As Object, e As EventArgs) Handles timeLabel.Load
+
+        timeLabel.Text = System.DateTime.Now.ToString("hh:mm tt")
+
+    End Sub
 End Class
 

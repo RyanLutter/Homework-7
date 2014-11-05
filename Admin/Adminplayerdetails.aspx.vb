@@ -22,4 +22,9 @@ Partial Class Admin_Adminplayerdetails
     End Sub
 
 
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+
+        fv_details.Focus()
+
+    End Sub
 End Class
