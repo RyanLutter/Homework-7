@@ -25,7 +25,7 @@
                 <ItemStyle Font-Bold="True" HorizontalAlign="Center" />
                 </asp:HyperLinkField>
             </Columns>
-        </asp:GridView>
+        </asp:GridView>   
     <br />
 
 </asp:Content>

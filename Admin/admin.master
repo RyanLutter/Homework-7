@@ -43,7 +43,7 @@
            
         <br clear="all" />
 
-        <hr style="color: red" />
+        <hr style="color: white" />
 
 
 
@@ -54,7 +54,7 @@
         </div>
 
         <span class="footer">
-        <hr style="color: red" />
+        <hr style="color: white" />
         Copyright © 2014. Created by Ryan Lutter.
         </span>
     </form>

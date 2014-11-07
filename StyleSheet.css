@@ -69,10 +69,15 @@
 
 .view {
     width: auto; 
-    margin: 5px 0 10px 0; 
+    margin: 0 auto;
     border: solid 10px white; 
     border-collapse: collapse; 
     text-align: center;
+    margin-left: auto; 
+    margin-right: auto;
+    align-content: center;
+    align-items: center;
+    align-self: center;
 }
 
 .view td {
