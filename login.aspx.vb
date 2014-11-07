@@ -1,4 +1,8 @@
-﻿
+﻿Imports System.Data
+Imports System.Configuration
+Imports System.Data.SqlClient
+Imports System.Web.Security
+
 Partial Class login
     Inherits System.Web.UI.Page
 
